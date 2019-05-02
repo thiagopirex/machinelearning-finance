@@ -1,0 +1,12 @@
+version: "2"
+services:
+
+  tensorflow-jupyter-notebook:
+    build: .
+    image: tensorflow-jupyter-notebook:latest
+    container_name: tensorflow-jupyter-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/tf
+      - ./datasets:/tf/datasets
