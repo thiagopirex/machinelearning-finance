@@ -5,6 +5,7 @@ services:
     build: .
     image: tensorflow-jupyter-notebook:latest
     container_name: tensorflow-jupyter-notebook
+    user: "${UID}:${GID}"
     ports:
       - 8888:8888
     volumes:

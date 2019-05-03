@@ -16,7 +16,7 @@ RUN mkdir -p /tf/datasets && \
     chown -R ${USER}:${USER_GROUP} ${USER_HOME} && \
     chown -R ${USER}:${USER_GROUP} /tf
 
-RUN pip install pandas plotly 
+RUN pip install pandas plotly scikit-learn numpy 
 
 
 WORKDIR ${USER_HOME}
